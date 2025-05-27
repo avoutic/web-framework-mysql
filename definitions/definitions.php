@@ -16,7 +16,7 @@ return [
 
         $dbConfig = $secureConfigService->getAuthConfig('db_config.main');
 
-        $mysql = new \mysqli(
+        $mysql = @new \mysqli(
             $dbConfig['database_host'],
             $dbConfig['database_user'],
             $dbConfig['database_password'],
