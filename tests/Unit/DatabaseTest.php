@@ -4,9 +4,9 @@ namespace Tests\Unit;
 
 use Codeception\Stub\Expected;
 use Codeception\Test\Unit;
-use WebFramework\Core\DatabaseResultWrapper;
+use WebFramework\Database\DatabaseResultWrapper;
+use WebFramework\Diagnostics\NullInstrumentation;
 use WebFramework\Mysql\MysqliDatabase;
-use WebFramework\Core\NullInstrumentation;
 
 /**
  * @internal

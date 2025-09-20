@@ -2,15 +2,12 @@
 
 namespace WebFramework\Mysql;
 
-use DI;
 use Psr\Container\ContainerInterface;
-use WebFramework\Core\Database;
-use WebFramework\Core\DatabaseProvider;
-use WebFramework\Core\Instrumentation;
+use WebFramework\Database\DatabaseProvider;
+use WebFramework\Diagnostics\Instrumentation;
 use WebFramework\Security\ConfigService;
 
 return [
-    Database::class => DI\get(MysqliDatabase::class),
     MysqliDatabase::class => function (ContainerInterface $c) {
         $secureConfigService = $c->get(ConfigService::class);
 

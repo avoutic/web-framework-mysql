@@ -11,9 +11,9 @@
 
 namespace WebFramework\Mysql;
 
-use WebFramework\Core\Database;
-use WebFramework\Core\DatabaseResultWrapper;
-use WebFramework\Core\Instrumentation;
+use WebFramework\Database\Database;
+use WebFramework\Database\DatabaseResultWrapper;
+use WebFramework\Diagnostics\Instrumentation;
 
 /**
  * Class MysqliDatabase.
